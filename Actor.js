@@ -6,4 +6,7 @@ class Actor {
     this.x = x;
     this.y = y;
   }
+  scroll (y) {
+    this.scroll = -5;
+  }
 }
