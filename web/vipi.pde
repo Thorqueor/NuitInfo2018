@@ -19,14 +19,14 @@ void setup(){
   PackList = new ArrayList<Droppack>();
   //ObstacleList = new ArrayList<Obstacle>();
   ObjectifList = new ArrayList<Objectif>();
-  tab[0] = loadImage("../data/vipi1.png");
+  tab[0] = loadImage("data/vipi1.png");
   tab[0].resize(200,230);
-  tab[1] = loadImage("../data/vipi2.png");
+  tab[1] = loadImage("data/vipi2.png");
   tab[1].resize(200,230);
   B1 = new Bird(50, 50,3, tab);
   size(1550,860);
   //Load all sprites
-  land = loadImage("../data/background.png");
+  land = loadImage("data/background.png");
   land.resize(6400, 540);
   score = 0;
   
@@ -233,7 +233,7 @@ class Droppack {
     int x ;
     int y ;
   Droppack(int X, int Y) {
-    sprite = loadImage("../data/caisse.png");
+    sprite = loadImage("data/caisse.png");
     sprite.resize(50,50);
     gravityFactor = 3; //valeur arbitraire liée à la gravité
     kineticFactor = 1; //selon le principe d'inertie de Newton, l'objet largué subira un mouvement vers l'avant qui sera atténué par les frottements de l'air
@@ -260,7 +260,7 @@ class Obstacle {
     int x;
     int y;
     Obstacle(int X, int Y) {
-    sprite = loadImage("../data/brickWall.jpg");
+    sprite = loadImage("data/brickWall.jpg");
     //sprite.resize(50,50);
 
     x = X;
@@ -292,7 +292,7 @@ class Objectif {
     int x;
     int y;
     Objectif(int X, int Y) {
-    sprite = loadImage("../data/bonhomme.png");
+    sprite = loadImage("data/bonhomme.png");
     sprite.resize(150,230);
     x = X;
     y = Y;
